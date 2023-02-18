@@ -1,237 +1,107 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learning HTML</title>
-    
-    <link rel="stylesheet" href="cssn/bootstrap.min.css">
-    <script type="text/javascript" src="js/bootstrap.min.js" ></script>
-    <script type="text/javascript" src="js/jquery-3.6.3.min.js"></script>
-    
-    <!--el siguiente es el icono de la pestaña-->
-    <link rel="icon" type="image/x-icon" href="/iconos/Html.ico">
-    <link rel="stylesheet" type="text/css" href="css/estilos.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("a").click(function(evento){
-                alert("Enlace precionado");
-            });
-        });
-    </script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-***********" crossorigin="anonymous">
 
-    <!-- Open Graph data -->
-        <meta property="og:title" content="Web semantica" />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content=" http://www.example.com" />
-        <meta property="og:image" content=" http://example.com/image.jpg" />
-        <meta property="og:description" content="este documento cuenta los documentos semanticos mas utilizados" />
-        
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Carga Curriculos</title>
 </head>
 <body>
+    <header>
+        <div class="photo-container">
+            <img src="imagenes/gato perfil.jpg" alt="Mi Foto">
+        </div>
 
-    
-    <h1>H es heading = encabezado</h1>
-    <h2>H es heading = encabezado</h2>
-    <h3>H es heading = encabezado</h3>
-    <h4>H es heading = encabezado</h4>
-    <h5>H es heading = encabezado</h5>
-    <h6>H es heading = encabezado</h6>
+        <nav>
+			<div class="menu">
+				<ul>
+					<li><a class="nav-link" href="#sobre">Sobre mí</a></li>
+                    <li><a class="nav-link" href="#acerca">Acerca de</a></li>
+					<li><a class="nav-link" href="#educacion">Educación</a></li>
+                    <li><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                    <li><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+			</div>
+		</nav>
+	</header>
+	<main>
+    <nav>
+		<!-- Aquí irá el contenido de tu sitio web -->
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h3>Mi CV</h3>
+                </div>
+                <div class="sidebar-menu">
+                    <ul>
+                        <li><a href="#atributos">Atributos</a></li>
+                        <li><a href="#logro-profesional">Logro profesional</a></li>
+                        <li><a href="#logro-personal">Logro personal</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    <div class="main-content">
+    <!-- Aquí irá el contenido de tu sitio web -->
+        <div class="container">
+            <div class="left-column">
+                <h2>Mis Atributos</h2>
+                <p>Aquí puedes escribir una breve descripción de tus habilidades y atributos personales.</p>
+                <h2>Logro Profesional</h2>
+                <p>Aquí puedes escribir una descripción de tus logros profesionales más destacados.</p>
+                <h2>Logro Personal</h2>
+                <p>Aquí puedes escribir una descripción de tus logros personales más destacados.</p>
+            </div>
+            <div class="right-column">
 
-    <p>P es parragraph (parrafo)</p>
-    <p>esto es un parrafo con <strong>algo mas</strong> que lo resalta</p>
+                <h2>Resumen</h2>
+                <p>Aquí puedes escribir un resumen de tu experiencia, habilidades y objetivos profesionales.</p>
 
-    <h2>Aqui insertamos una imagen</h2>
-    
-    <img src="Imagenes/grumpy-cat-attribute-small.png" alt="text not found"
-    width="350px" height="80px"/>
+                <h2>Educación</h2>
+                    <ul>
+                    <li>Título universitario</li>
+                    <li>Institución</li>
+                    <li>Año de graduación</li>
+                    </ul>
 
-    <ul>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
-    </ul>
+                <h2>Experiencia</h2>
+                    <ul>
+                    <li>Nombre de la empresa</li>
+                    <li>Puesto</li>
+                    <li>Fecha de inicio - Fecha de finalización</li>
+                    <li>Descripción de las responsabilidades y logros</li>
+                    </ul>
 
-    <p>span es un elemento de linea</p>
-        <span>consola de google (esto esta escrito con span)</span>
-    <p>la consola de google es excelente para 
-        poder modificar el documento HTML en vivo
-        pero OJO!!! solo modifica el documento on line, y No el archivo origen.
-        esto nos ayuda a ver en tiempo real como iria quedando y asi podamos hacer
-        los cambios en nuestro proyecto
-    </p>
-
-    <h2>Elementos de bloque VS linea</h2>
-    <p>Aqui veremos la diferencias</p>
-    <p>Elemento de bloque ocupa toda la fila "espacio que tiene disponilbe.
-        esto sin que se altere su comportamiento en CSS"</p>
-        <button type="button">
-            <a href="https://www.w3schools.com/html/html_blocks.asp"> Click para ver</a>
-        </button>
-
-    <h2>Aqui veremos elemento Form</h2>
-    <p>Este se utiliza para hacer formularios de inscripcion por ejemplo:</p>
-
-    <form action="" method="get">
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Cual es tu nombre"/>
-        <label for="Apellido">Apellido</label>
-        <input type="text" id="apellido" name="apellido" placeholder="Cual es tu apellido"/>
-        <label for="E-mail">E-mail</label>
-        <input type="email" id="E-mail" name="email" placeholder="Ingresa tu mail">
-        <label for="Contraseña">Contraseña</label>
-        <input type="password" id="Contraseña" name="password" placeholder="Ingrese su contraseña">
-        <input type="submit" value="Enviar">
-    
-    </form >
-
-    <h2>A partir de Aqui comienza el <strong>Modulo 2</strong></h2>
-    <ul>
-        <li>Video</li>
-        <li>Audio</li>
-        <li></li>
-    </ul>
-        
-    <h2>Parte 1 video</h2>    
-        <button>
-            <a href="https://www.w3schools.com/html/html_media.asp">Ver aqui para mas info.</a>
-        </button>
-        <p>Veremos como insertar Media dentro de nuestra pagina, videos propios, videos de youtube o de otras direcciones.</p>
-        
-        <p>Informacion de atributos de video </p>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video">Mozilla</a>
-        <p>pequeña muestra</p>
-
-        <video width="320" height="240" controls>
-            <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
-            <source src="https://www.w3schools.com/html/movie.ogg" type="video/ogg">
-            Tu navgador no soporta el elmento de video.
-        </video>  
-
-<h2>Parte 2 Audio, Videos de youtube y Web semanticas</h2>
-<p>Aqui veremos como insertar elementos de <strong>Audio</strong></p>
-
-<button>
-    <a href="https://www.w3schools.com/html/html5_audio.asp">Click aqui para mas Info</a>
-</button>
-<p>pequeña muestra</p>
-    <!-- esto es un comentario de bloque en HTML
-    <audio controls autoplay>
-        <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg">
-        <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio
-    </audio>
--->
-    <p>Aqui veremos como embeber <strong>Videos de youtube</strong></p>
-    
-    <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
-    </iframe>
-
-    <h2>Web semantica</h2>
-    <p>aqui veremos Web semantica</p>
-    <button>
-        <a href="https://www.w3schools.com/html/html5_semantic_elements.asp">Click para ver mas</a>
-    </button>
-    <p>Consejo mirar la informacion</p>
-    <p>Tenemos que pensar no solo en la vista y busqueda de parte del usuario
-        sino tambien en google ya que tenemos que posicionarnos dentro de las 
-        busquedas</p>
-    <p>los elementos <strong>div</strong>  no son semanticos
-        los elementos <strong>Table</strong> si lo son</p>
-    <!--
-    <header></header>
-    <nav></nav>
-    <footer></footer>
-    -->
-
-    <h2>open graph</h2>
-    <p>es la previsualizacion de imagenes</p>
-    
-    <h2><strong>CSS</strong></h2>
-    <p>Trabajaremos con estilos para empezar a darle formato a nuestra pagina</p>
-    
-    <button><a href="https://www.w3schools.com/css/default.asp">Click para ver mas</a></button>
-    <p>El siguiente boton te lleva a una ayuda de CSS</p>    
-    <button><a href="https://htmlcheatsheet.com/css/">CheatSheet</a></button>
-    
-    
-    <h2>CSS Box Model</h2>
-    <p>Pensar en cada una de las secciones como cajas</p>
-    <button><a href="https://www.w3schools.com/css/css_boxmodel.asp">Clic para mas Info.</a></button>
-    <p>Ver siguiente Imagen</p>
-    <img src="Imagenes/Boxmodel.png" alt="Img no encontrada"
-    width="350px" height="190px">
-
-    <h2>Responsive web designe</h2>
-    <p>Deberemos pensar en que nuestra pagina se debe ver desde cualquier pantalla, ej. Tablet, cel, PC</p>
-    <h3>viewport</h3>
-    <p>grilla</p>
-    
-
-    <h2>Framesworks</h2>
-    <h2>Meta viewport</h2>
-    <h2>Media Queries</h2>
-    <a href="https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries">Info Mozilla</a>
-    <p>regla de CSS que va a incluir si lgun tipo de condicion es verdadera</p>
-    <img src="Imagenes/mediaquery.png" alt="Image not found"
-    width="350px" height="250px">
-
-    <p>librerias full Responsive</p>
-    <a href="https://getbootstrap.com/">bootstrap</a>
-    <p>bootstrap es una libreria de plantillas de diseño con topografia,
-        formularios, botones, cuadros, menus de navegacion y otros elementos.
-        basado en HTML y CSS, asi como extenciones de javascript adicionales.
-    </p>
-    
-    <div class="container-fluid">
-        <p>hola mundo</p>
+                <h2>Habilidades</h2>
+                    <ul>
+                    <li>Habilidad 1</li>
+                    <li>Habilidad 2</li>
+                    <li>Habilidad 3</li>
+                </ul>
+            </div>
+        </div>
     </div>
-
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-            Column
-            </div>
-            <div class="col">
-            Column
-            </div>
-            <div class="col">
-            Column
-            </div>
-        </div>
-        </div>
-
-    <a href="https://get.foundation/">Foundation</a>
-    <a href="https://tailwindcss.com/">tailwindcss</a>
-
-    <h3>break point</h3>
-    <p>sirve para definir los pixeles en los cuales la pantalla debe cambiear
-        el layout segun el dispositivo</p>
-    <h3>Responsive web desing</h3>
-    <p>Esto es trabajar con una grilla de columnas, por lo general son 12 columnas</p>
-    <h3>trabajar en Responsive</h3>
-    <p>para que las imagenes no se deformen se debe trabajar con las propiedades
-        max-width: 100% height: auto;</p>
-
-    <h2>Alojamiento y tipo de servidores</h2>
-    <ul>
-        <li>Funcionamiento del servidor</li>
-        <li>Como publicar un proyecto</li>
-        <li>Que tener en cuenta a la hora de optar por un hosting y donde comprar dominios</li>
-        <li>Aprender a utilizar GIT herramienta de versionado de codigo fuente mas popular</li>
-    </ul>
-
-    <center>
-        <h3>probando bootstrap</h3>
-    </center>
-    
+    </nav>
+	</main>
+	<script src="js.js"></script>
 </body>
+<footer>
+    <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+    <div class="contact-info">
+        <a href="tel:+123456789"><i class="fas fa-phone"></i>123-456-789</a>
+        <a href="mailto:example@example.com"><i class="fas fa-envelope"></i>example@example.com</a>
+    </div>
+</footer>
 </html>
-
-
-
-
-
-
