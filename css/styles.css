@@ -16,7 +16,11 @@ header {
 	width: 100%;
 	z-index: 999;
 	padding: 20px 0;
-}
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: right;
+	border-bottom: 1px solid #ddd;
+  }
 main {
 	display: flex;
 	align-items: center;
