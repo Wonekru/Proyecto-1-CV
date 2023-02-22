@@ -9,6 +9,23 @@ body {
 }
 
 header {
+	background: linear-gradient(to right, #b8b8b8, #ebebeb);
+	width: 100%;
+  }
+  
+  header ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: flex-end;
+  }
+  
+  header li {
+	margin: 0 20px;
+	font-size: 18px;
+  }
+header {
 	background: linear-gradient(to bottom right, #EDEEF0, #C5C6C7);
 	width: 100%;
 	display: flex;
