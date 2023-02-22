@@ -9,18 +9,67 @@ body {
 }
 
 header {
-	background: linear-gradient(to bottom, #e6e6e6, #cccccc);
-	max-width: 800px;
-	margin: 0 auto;
-	padding: 20px;
+	background: linear-gradient(to bottom right, #EDEEF0, #C5C6C7);
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 20px;
   }
+  
   header h1 {
-	font-size: 36px;
+	font-size: 2rem;
+	color: #1D1D1F;
 	margin: 0;
   }
+  
+  header nav {
+	margin-left: 20px;
+  }
+  
+  header nav ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  header nav li {
+	margin-left: 20px;
+  }
+  
+  header nav a {
+	color: #1D1D1F;
+	text-decoration: none;
+	font-size: 1.2rem;
+  }
+  
+  /* Estilos para hacer el sitio responsive */
+  @media (max-width: 768px) {
+	header {
+	  flex-direction: column;
+	}
+  
+	header h1 {
+	  font-size: 1.5rem;
+	  margin-bottom: 10px;
+	}
+  
+	header nav {
+	  margin: 10px 0 0 0;
+	}
+  
+	header nav ul {
+	  flex-direction: column;
+	}
+  
+	header nav li {
+	  margin: 10px 0 0 0;
+	}
+  }
+
+
+
 main {
 	display: flex;
 	align-items: center;
