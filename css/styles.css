@@ -11,6 +11,9 @@ body {
 header {
 	background: linear-gradient(to right, #b8b8b8, #ebebeb);
 	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
   }
   
   header ul {
@@ -19,6 +22,7 @@ header {
 	padding: 0;
 	display: flex;
 	justify-content: flex-end;
+	
   }
   
   header li {
@@ -42,6 +46,8 @@ header {
   
   header nav {
 	margin-left: 20px;
+	text-align: right;
+	position: right;
   }
   
   header nav ul {
@@ -49,6 +55,7 @@ header {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	text-align: right;
   }
   
   header nav li {
@@ -59,6 +66,12 @@ header {
 	color: #1D1D1F;
 	text-decoration: none;
 	font-size: 1.2rem;
+	text-align: right;
+  }
+  .container {
+	display: flex;
+	justify-content: flex-end;
+	flex-wrap: wrap;
   }
   
   /* Estilos para hacer el sitio responsive */
@@ -74,10 +87,12 @@ header {
   
 	header nav {
 	  margin: 10px 0 0 0;
+	  text-align: right;
 	}
   
 	header nav ul {
 	  flex-direction: column;
+	  text-align: right;
 	}
   
 	header nav li {
@@ -109,6 +124,7 @@ main {
 nav {
 	border-bottom: 2px solid #333333;
 	display: flex;
+	position: right;
   }
 /*nav {
 	display: flex;
