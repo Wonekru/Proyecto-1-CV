@@ -5,7 +5,9 @@
 }
 
 body {
+	margin: 0;
 	font-family: 'Montserrat', sans-serif;
+	overflow: auto;
 }
 
 header {
@@ -14,8 +16,24 @@ header {
 	position: absolute;
 	top: 0;
 	right: 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 90px;
+	border-bottom: 2px solid #ddd;
+	left: 0;
+	height: 80px;
+	z-index: 1000;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   }
-  
+
+ /* .header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	float: right;
+  }
+  */
   header ul {
 	list-style: none;
 	margin: 0;
@@ -30,15 +48,7 @@ header {
 	font-size: 18px;
   }
 
-/*header {
-	background: linear-gradient(to bottom right, #EDEEF0, #C5C6C7);
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 20px;
-  }
-  */
+
   header h1 {
 	font-size: 2rem;
 	color: #1D1D1F;
@@ -121,25 +131,18 @@ main {
 	margin: 50px;
 	padding: 20px;
 }
-nav {
-	border-bottom: 2px solid #333333;
-	display: flex;
-	right: 0;
-  }
-/*nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 100px;
-	float: right;
-}
-*/
+
 nav {
 	background-color: #f7f7f7;
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
 	padding-top: 50px;
 	padding-bottom: 50px;
+	display: flex;
+	right: 0;
+	float: right;
+	margin-right: 20px;
+	margin-top: 80px;
 }
 
 
@@ -175,8 +178,8 @@ nav ul {
 
 .photo-container {
 	position: fixed;
-	top: 0;
-	left: 0;
+	top: 10px;
+	right: 10px;
 	padding: 5px;
 }
 
@@ -185,6 +188,11 @@ nav ul {
 	height: 100px;
 	object-fit: cover;
 	border-radius: 50%;
+}
+.profile-photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
 }
 
 .menu-icon {
@@ -201,11 +209,16 @@ nav ul {
 
 .menu ul {
 	display: flex;
+	list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .menu ul li {
 	margin: 0 15px;
 	position: relative;
+	display: inline-block;
+    margin-left: 20px;
 }
 
 .menu ul li a {
@@ -230,11 +243,15 @@ nav ul {
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 5px;
 }
 
 .nav-link:hover {
     transform: scale(1.1);
     color: #2cb4e6;
+	border-bottom: 2px solid #333;
 }
 
 .sidebar {
