@@ -336,7 +336,10 @@ li {
 	margin-bottom: 10px;
 }
 
-
+.contact-info {
+	display: flex;
+	align-items: center;
+  }
 
 .social-icons a,
 .contact-info a {
