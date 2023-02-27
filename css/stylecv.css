@@ -1,11 +1,13 @@
 /* Estilos generales */
 
+
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
     background-color: #f8f8f8;
-    overflow: auto;
-    overflow-y: scroll;
+    overflow-y: auto;
+    
+  
   }
   
   .container {
