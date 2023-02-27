@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mi CV</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-MkZ9+6urB0TV8WujO+x2v+1TegwftTdlx8eKLJzRv//pX9E+LBY6JWU6Kvkk6zoMWUH52+ED4xJUfntg0nYlZQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/b793667539.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
     <link rel="stylesheet" href="css/stylecv.css" />
-  </head>
-  <body>
-    <header>
+
+</head>
+<body>
+  <header>
       <div class="profile-photo">
         <img src="imagenes/persona random.jpg" alt="Profile photo" />
       </div>
@@ -25,40 +28,93 @@
           </ul>
         </nav>
       </div>
-    </header>
-    <main>
-        <div class="row">
-          <div class="col-3 left-column">
-            <h2>Información personal</h2>
+  </header>
+
+  <main>
+    <div class="row">
+      <div class="col-3 left-column">
+        <h2>Información personal</h2>
+        <ul>
+          <li><strong>Nombre:</strong> John Doe</li>
+          <li><strong>Edad:</strong> 25</li>
+          <li><strong>Dirección:</strong> 123 Main Street</li>
+          <li><strong>Ciudad:</strong> New York</li>
+          <li><strong>País:</strong> USA</li>
+          <li><strong>Email:</strong> johndoe@example.com</li>
+        </ul>
+      </div>  
+    </div>
+
+    <div class="col-9">
+      <section id="sobre-mi">
+        <div class="container">
+          <h2>Sobre mí</h2>
             <ul>
-              <li><strong>Nombre:</strong> John Doe</li>
-              <li><strong>Edad:</strong> 25</li>
-              <li><strong>Dirección:</strong> 123 Main Street</li>
-              <li><strong>Ciudad:</strong> New York</li>
-              <li><strong>País:</strong> USA</li>
-              <li><strong>Email:</strong> johndoe@example.com</li>
+              <li>Nombre: Juan Pérez</li>
+              <li>Edad: 30 años</li>
+              <li>Profesión: Desarrollador web</li>
+              <li>Nacionalidad: Mexicana</li>
             </ul>
           </div>
-          <div class="col-9">
-            <h2>Resumen profesional</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut urna at libero vulputate mattis. Nam sed aliquam leo. Curabitur laoreet metus eu sem tristique, ac tincidunt tortor malesuada. Morbi viverra, massa sit amet luctus volutpat, lectus lectus sollicitudin neque, ac volutpat risus lorem non nisi.</p>
-            <p>Phasellus rutrum fringilla tellus, sit amet hendrerit nisl porttitor vel. Aliquam erat volutpat. Integer rutrum turpis quis lorem efficitur, vel efficitur elit ornare. Nullam in ipsum eget sapien hendrerit malesuada. Suspendisse et neque tristique, pretium tellus eu, venenatis tellus.</p>
-            <p>Mauris suscipit nulla vitae vestibulum finibus. Etiam tristique, velit eu eleifend auctor, lacus magna faucibus nisi, id feugiat elit elit et elit. Proin rutrum tristique massa quis eleifend. Ut ullamcorper sagittis sapien, eget vestibulum ipsum laoreet non. Integer dictum ex quis elit rhoncus, vel aliquam nisi accumsan.</p>
-          </div>
-        </div>
-      </main>
-      <footer>
+      </section>
+
+      <section id="educacion">
         <div class="container">
-          <div class="footer-content">
-            <p>Contacto: info@miempresa.com | 123-456-7890</p>
-            <div class="social-icons">
-              <a href="https://www.facebook.com/miempresa"><i class="fab fa-facebook"></i></a>
-              <a href="https://twitter.com/miempresa"><i class="fab fa-twitter"></i></a>
-              <a href="https://www.instagram.com/miempresa"><i class="fab fa-instagram"></i></a>
-            </div>
-            <p>Derechos de autor © 2023 Mi Empresa. Todos los derechos reservados.</p>
-          </div>
+          <h2>Educación</h2>
+            <ul>
+              <li>Maestría en Ciencias de la Computación - Universidad Nacional Autónoma de México</li>
+              <li>Licenciatura en Informática - Instituto Tecnológico y de Estudios Superiores de Monterrey</li>
+            </ul>
         </div>
-      </footer>
-  </body>
+      </section>
+
+      <section id="experiencia">
+        <div class="container">
+          <h2>Experiencia</h2>
+            <ul>
+              <li>Desarrollador web en ABC Company - 2018-2021</li>
+              <li>Practicante en XYZ Company - 2017-2018</li>
+            </ul>
+        </div>
+      </section>
+
+      <section id="habilidades">
+        <div class="container">
+          <h2>Habilidades</h2>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>PHP</li>
+              <li>MySQL</li>
+            </ul>
+        </div>
+      </section>
+
+      <section id="contacto">
+        <div class="container">
+          <h2>Contacto</h2>
+            <ul>
+              <li>Email: juanperez@gmail.com</li>
+              <li>Teléfono: 555-1234</li>
+              <li>LinkedIn: linkedin.com/in/juanperez</li>
+            </ul>
+        </div>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>Contacto: info@miempresa.com | 123-456-7890</p>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/miempresa"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/miempresa"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/miempresa"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+    </div>
+  </footer>
+</body>
 </html>
